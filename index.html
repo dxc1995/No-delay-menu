@@ -3,8 +3,201 @@
 <head>
 	<meta charset="UTF-8">
 	<title>京东无延迟菜单</title>
+	<style type="text/css">
+	.wrap {
+		position: relative;
+		width: 200px;
+		left: 50px;
+		top: 50px;
+	}
+
+	ul {
+		padding: 15px 0;
+		margin: 9px;
+		list-style: none;
+		background: #6c6669;
+		color: #fff;
+		border-right-width: 0;
+	}
+
+	ul li {
+		display: block;
+		height: 30px;
+		line-height: 30px;
+		padding-left: 12px;
+		cursor: pointer;
+		font-size: 14px;
+		position: relative;
+	}
+
+	ul li.active {
+		background: #999395;
+	}
+
+	li span:hover {
+        color: #c81623;
+	}
+
+	.none/ {
+		display: none;
+	}
+
+	#sub {
+		width: 600px;
+		position: absolute;
+		border: 1px solid #f7f7f7;
+		background: #f7f7f7;
+		box-shadow: 2px 0 5px rgba(0,0,0,.3);
+		left: 191px;
+		top: 0;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 10px;
+	}
+
+	.sub_content a {
+		font-size: 12px;
+		color: #666;
+		text-decoration: none;
+	}
+
+	.sub_content dd a {
+		border-left: 1px solid #e0e0e0;
+		padding: 0 10px;
+		margin: 4px 0;
+	}
+
+	.sub_content dl {
+		overflow: hidden;
+	}
+
+	.sub_content dt {
+		float: left;
+		width: 70px;
+		font-weight: bold;
+		clear: left;
+		position: relative;
+	}
+
+	.sub_content dd {
+		float: left;
+		margin-left: 5px;
+		border-top: 1px solid #eee;
+		margin-bottom: 5px;
+	}
+
+	.sub_content dt i {
+		width: 4px;
+		height: 14px;
+		font: 400 9px/14px consolas;
+		position: absolute;
+		right: 5px;
+		top: 5px;
+	}
+    </style>
 </head>
 <body>
+	<div class="wrap">
+		<ul>
+			<li data-id="a">
+				<span>家用电器</span>
+			</li>
+			<li data-id="b">
+				<span>手机 / 运营商 / 数码</span>
+			</li>
+			<li data-id="c">
+				<span>电脑办公</span>
+			</li>
+			<li data-id="d">
+				<span>家居 / 家具 / 服装 / 厨具</span>
+			</li>
+			<li data-id="e">
+				<span>男装 / 女装 / 童装 / 内衣</span>
+			</li>
+			<li data-id="f">
+				<span>个性化妆 / 清洁用品 / 宠物</span>
+			</li>
+			<li data-id="g">
+				<span>鞋靴 / 箱包 / 珠宝 / 奢饰品</span>
+			</li>
+			<li data-id="h">
+				<span>运动 / 户外 / 钟表</span>
+			</li>
+			<li data-id="i">
+				<span>汽车 / 汽车用品</span>
+			</li>
+			<li data-id="j">
+				<span>女婴 / 玩具乐器</span>
+			</li>
+			<li data-id="k">
+				<span>食品 / 酒类 / 生鲜 / 特产</span>
+			</li>
+			<li data-id="l">
+				<span>医药保健</span>
+			</li>
+		</ul>
+		<div id="sub" class="none">
+			<div id="a" class="sub_content none">
+				<dl>
+					<dt>
+						<a href="#">电视<i>&gt;</i></a>
+					</dt>
+					<dd>
+						<a href="#">会员品牌</a>
+						<a href="#">国产品牌</a>
+						<a href="#">互联网品牌</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#">空调<i>&gt;</i></a>
+					</dt>
+					<dd>
+						<a href="#">整挂式空调</a>
+						<a href="#">柜式空调</a>
+						<a href="#">中央空调</a>
+						<a href="#">空调配件</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#">洗衣机<i>&gt;</i></a>
+					</dt>
+					<dd>
+						<a href="#">滚筒洗衣机</a>
+						<a href="#">洗烘一体机</a>
+						<a href="#">波轮易洗机</a>
+						<a href="#">迷你洗衣机</a>
+						<a href="#">洗衣机配件</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#">电视<i>&gt;</i></a>
+					</dt>
+					<dd>
+						<a href="#">会员品牌</a>
+						<a href="#">国产品牌</a>
+						<a href="#">互联网品牌</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="#">冰箱<i>&gt;</i></a>
+					</dt>
+					<dd>
+						<a href="#">多门</a>
+						<a href="#">对开门</a>
+						<a href="#">三门</a>
+						<a href="#">双门</a>
+						<a href="#">冰柜/冰吧</a>
+						<a href="#">酒柜</a>
+						<a href="#">冰箱配件</a>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
 	<script src="js/jquery.js"></script>
 </body>
 </html>
